@@ -58,6 +58,19 @@ app.get('/about', (req, res) => {
   });
 })
 
+app.get('/projects', (req, res) => {
+  //res.send('About page');
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page',
+  });
+})
+
+//create URL /projects -- DONE
+//make view -- render header and footer and "portfolio page here"
+//header file: add new link for "projects" URL / pageTitle
+// open on Localhost 3000 -> make commit -> push to github -> gitpush heroku
+// open app in browser and ensure the projects page shows up as expected
+
 //create a route at /bad
 //res.send -> JSON data with an error message property; error handling request
 
