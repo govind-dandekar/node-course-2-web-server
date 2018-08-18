@@ -52,16 +52,14 @@ app.get('/', (req, res) => {
 // same h1, same footer, welcome message passed
 
 app.get('/about', (req, res) => {
-  //res.send('About page');
   res.render('about.hbs', {
     pageTitle: 'About Page',
   });
 })
 
 app.get('/projects', (req, res) => {
-  //res.send('About page');
   res.render('projects.hbs', {
-    pageTitle: 'Projects Page',
+    pageTitle: 'Projects',
   });
 })
 
